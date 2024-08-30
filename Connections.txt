@@ -1,0 +1,18 @@
+Connections 
+
+SD Card Module       ESP32 
+GND                  GND
+Vcc                  VIn
+MISO                 D19 
+MOSI                 D23 
+SCK                  D18 
+CS                   D5
+
+
+I2S MIC              ESP32
+GND                  GND
+VDD                  3.3V
+SD                   D35                  
+SCK                  D33
+WS                   D22
+L/R                  3.3V
