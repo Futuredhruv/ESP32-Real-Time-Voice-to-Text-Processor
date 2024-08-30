@@ -1,0 +1,26 @@
+Usage
+
+Initial Setup:
+
+After uploading the code to your ESP32, open the Serial Monitor in the Arduino IDE.
+Set the baud rate to 115200.
+The ESP32 will attempt to connect to your WiFi network and initialize the SD card. Look for messages in the Serial Monitor indicating the connection status and SD card initialization.
+Recording Audio:
+
+To start recording audio, press and hold the button connected to pin_RECORD_BTN on your ESP32.
+The LED connected to LED pin will turn on, indicating that recording is in progress.
+Release the button to stop recording. The system will then process the audio file for transcription.
+Viewing Transcription:
+
+Once the recording is stopped, the system will send the recorded audio file to Deepgram for transcription.
+The transcribed text will be displayed in the Serial Monitor.
+Ensure that you have a stable WiFi connection to successfully send data to the Deepgram API and receive the transcription results.
+LED Indicators:
+
+The LED will turn on when recording or when the system is processing the audio.
+It will turn off when the system is idle or has completed processing.
+Troubleshooting:
+
+If the system fails to connect to WiFi, verify your network credentials in the code.
+If the SD card initialization fails, check the connections and ensure that the SD card is properly inserted and formatted.
+Feel free to adapt or expand this text based on your project's specifics and any additional features or instructions you might have.
